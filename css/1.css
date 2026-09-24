@@ -1,0 +1,59 @@
+h2 { 
+
+    color: rgb(248, 2, 2); 
+
+    font-family: 'Courier New',Verdana, sans-serif; 
+
+} 
+
+ 
+
+h1 { 
+
+    color: rgb(0, 0, 0); 
+
+    font-family: 'Courier New',Verdana, sans-serif; 
+
+ 
+
+} 
+
+img { 
+
+    color: rgb(0, 0, 0);         
+
+display: block; 
+
+    margin-left: auto; 
+
+    margin-right: auto; 
+
+} 
+
+p { 
+
+    
+
+    font-size: 30px; 
+
+ 
+
+} 
+
+.S { 
+
+    BACKGROUND-COLOR: rgb(233, 250, 0); 
+
+} 
+
+.S2 { 
+
+    text-decoration: underline; 
+
+} 
+
+.S3 { 
+
+    font-weight: bold; 
+
+} 
