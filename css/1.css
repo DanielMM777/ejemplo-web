@@ -57,6 +57,11 @@ p {
     font-weight: bold; 
 
 } 
-body {
-    text-align: center;
+footer { 
+
+   background-color: rgba(78, 76, 76, 0.459);
+   border: 2px solid rgb(0, 0, 0);
+   line-height: 1;
+   height: 20px;
 }
+    

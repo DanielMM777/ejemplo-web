@@ -1,3 +1,48 @@
-.C{
-    width: 100px;
+thead {
+    border: 2px solid rgb(12, 111, 224);
+    border-radius: 10px;
 }
+tr {
+    border: 2px solid rgb(12, 111, 224);
+    border-radius: 10px;
+}
+
+.col1 {
+    border-top: 10px   ; 
+    border: 2px solid rgb(12, 111, 224);
+    border-bottom: px;
+}       
+.col2 {
+    border: 2px solid rgb(12, 111, 224);
+    
+}
+.col3 {
+    border: 2px solid rgb(12, 111, 224);
+    
+}
+.col4 {
+    border: 2px solid rgb(12, 111, 224);
+    
+}
+BODY {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+table {
+    border: 2px solid rgb(12, 111, 224);
+    width: 100%;
+    height: 150px    ;
+    
+}
+header {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+tr {
+    text-align: center;
+}
+
+
+
+    
