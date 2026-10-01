@@ -1,13 +1,21 @@
 body {
-    text-align: center;
+
+
+ background-image: url("../flor-rosa-naranja-aislada-sobre-fondo-blanco_969690-91.avif");
+        background-size: 35% auto;
+    background-position: center 5%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }
 
 .F{
+    text-align: center;
     color: #ff8800;
     position: relative;;
     font-weight: bold;
     font-size: 20px;
-    display: inline-block;
+    display: block;
 }
 .F1{
     color: #ff8800;
@@ -37,6 +45,7 @@ footer{
     font-size: 15px;
     text-align: left;;
    font-weight: bold;
+    margin-top: 200px;
    border: 2px solid rgb(0, 0, 0);
    background-color: rgb(100, 196, 199);
 }

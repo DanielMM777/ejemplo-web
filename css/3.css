@@ -17,8 +17,8 @@ tr {
     
 }
 .col3 {
+    width: 20%;
     border: 2px solid rgb(12, 111, 224);
-    
 }
 .col4 {
     border: 2px solid rgb(12, 111, 224);
@@ -28,7 +28,7 @@ BODY {
     background-color: rgb(255, 255, 255);
     padding: 10px;
 }
-table {
+.tabla1 {
     border: 2px solid rgb(12, 111, 224);
     width: 100%;
     height: 150px;
@@ -56,4 +56,10 @@ tr {
     background-color: rgb(55, 141, 15);
     border: 3px solid rgba(255, 251, 0, 0.589);
 
+}
+
+.tabla2 {
+    width: 100%;
+    height: 100px;
+    table-layout: fixed;
 }
