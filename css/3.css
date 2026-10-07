@@ -56,3 +56,9 @@ caption {
 .V {
     background-color: #95d12f;
 }
+
+#cabecera {
+    
+    width: 100%;
+    height: 60px;
+}
