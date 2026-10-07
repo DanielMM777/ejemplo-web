@@ -6,10 +6,19 @@ let numero2 = 3;
 
 const pi = 3.1416;
 
-var numero3 =  numero1 + numero2;
-
-var numero3= 0;
 
 
+function suma() {
+  let  numero3 = numero1 + numero2;
+  alert (numero3);
 
-alert (numero3);
+}
+
+function resta() {
+  let numero3 = numero1 - numero2;
+  alert (numero3);
+}
+function multiplicar() {
+  let numero3 = numero1 * numero2;
+  alert (numero3);
+}
