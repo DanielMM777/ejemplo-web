@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <script src="js/calculadora.js" defer></script>
+</head>
+<body data-theme="black">
+    <div class="calculator">
+        <div class="theme-picker">
+            <label for="theme-select">ESTILO DE INTERFAZ</label>
+            <select id="theme-select">
+                <option value="black">01 — Negro</option>
+                <option value="classic">02 — Clásico</option>
+                <option value="pink">03 — Rosa neón</option>
+                <option value="vox">04 — Verde VOX</option>
+                <option value="psoe">05 — Rojo PSOE</option>
+                <option value="colorblind">06 — Accesible para daltonismo</option>
+            </select>
+        </div>
+
+        <div class="color-wheel">
+            <div class="color-wheel__heading">
+                <span id="theme-wheel-label">GIRA PARA CAMBIAR DE MODO</span>
+                <output id="wheel-value" for="theme-wheel">Negro</output>
+            </div>
+            <div
+                id="theme-wheel"
+                class="theme-wheel"
+                role="slider"
+                tabindex="0"
+                aria-labelledby="theme-wheel-label"
+                aria-valuemin="0"
+                aria-valuemax="5"
+                aria-valuenow="0"
+                aria-valuetext="Negro"
+                aria-label="Gira la rueda para cambiar entre los temas"
+            >
+                <span class="theme-wheel__indicator" aria-hidden="true"></span>
+                <span class="theme-wheel__center" aria-hidden="true">↻</span>
+            </div>
+        </div>
+
+        <input type="text" id="pantalla" value="0" readonly>
+
+        <div class="keypad">
+            <button onclick="insertarNumero('7')" class="num">7</button>
+            <button onclick="insertarNumero('8')" class="num">8</button>
+            <button onclick="insertarNumero('9')" class="num">9</button>
+            <button onclick="insertarOperador('/')" class="operator">/</button>
+
+            <button onclick="insertarNumero('4')" class="num">4</button>
+            <button onclick="insertarNumero('5')" class="num">5</button>
+            <button onclick="insertarNumero('6')" class="num">6</button>
+            <button onclick="insertarOperador('*')" class="operator">*</button>
+
+            <button onclick="insertarNumero('1')" class="num">1</button>
+            <button onclick="insertarNumero('2')" class="num">2</button>
+            <button onclick="insertarNumero('3')" class="num">3</button>
+            <button onclick="insertarOperador('-')" class="operator">-</button>
+
+            <button onclick="insertarNumero('0')" class="num">0</button>
+            <button onclick="insertarNumero('.')" class="num">.</button>
+            <button onclick="calcularResultado()" class="equals">=</button>
+            <button onclick="insertarOperador('+')" class="operator">+</button>
+
+            <button onclick="limpiarPantalla()" class="clear">C</button>
+            <button onclick="toggleSigno()" class="toggle">±</button>
+            <button onclick="calcularPorcentaje()" class="percent">%</button>
+            <button onclick="calcularRaizCuadrada()" class="operator">√</button>
+
+            <button class="delete wide">DELETE</button>
+        </div>
+    </div>
+</body>
+</html>
