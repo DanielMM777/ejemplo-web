@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/piedra.js" ></script>
+    <title>Piedra, papel o tijera</title>
+    <script src="js/piedra.js" defer></script>
 </head>
 
 <body>
     <main>
-        <h1> piedra papel o tijera</h1>
-        <p class="instruciones">Elige una opcion y juega contra la IA</p>
-        <div class="opciones" >
-        <button type="button" onclick="juego('piedra')">✊</button>
-        <button type="button" onclick="juego('tijera')">✌️</button>
-        <button type="button" onclick="juego('papel')">✋</button>
-    </div>
-    <p id="marcador">Partidas jugadas: 0</p>
-    <p id="ganadas">Ganadas: 0</p>
-    <p id="empatadas">Empates: 0</p>
-    <p id="perdidas">Derrotas: 0</p>
-    
-    <section id="resultado">
-        <h2>Resultado</h2>
-        <p id="jugada-jugador">tu jagada aparecera aqui.</p>
-        <p id="jugada maquina">La juagada de la maquina</p>
-        <p id="mensaje" ></p>
+        <h1>Piedra, papel o tijera</h1>
+        <p class="instrucciones">Elige una opción y juega contra la máquina</p>
+        <div class="opciones">
+            <button type="button" onclick="juego('piedra')" aria-label="Elegir piedra">✊</button>
+            <button type="button" onclick="juego('papel')" aria-label="Elegir papel">✋</button>
+            <button type="button" onclick="juego('tijera')" aria-label="Elegir tijera">✌️</button>
+        </div>
+        <p id="marcador">Partidas jugadas: 0</p>
+        <p id="ganadas">Ganadas: 0</p>
+        <p id="empates">Empates: 0</p>
+        <p id="perdidas">Derrotas: 0</p>
 
-
-    </section>
+        <section id="resultado" aria-live="polite">
+            <h2>Resultado</h2>
+            <p id="jugada-jugador">Tu jugada aparecerá aquí.</p>
+            <p id="jugada-maquina">La jugada de la máquina aparecerá aquí.</p>
+            <p id="mensaje"></p>
+        </section>
     </main>
-  </body>
- </html>
+</body>
+</html>
