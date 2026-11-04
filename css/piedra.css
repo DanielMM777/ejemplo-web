@@ -1,25 +1,31 @@
-.opciones {
-    size: ;
-    background-color: rgba(0, 0, 0, 0.26);
-    border-radius: 2px;
-    border-color: rgb(250, 5, 5);
-
-}
-button :hover{
-    border-radius: 10px;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    align-items: center;
-    size: 20px;
-    transform: scale(1.02);
-    transition: 2s ;
-    width: 80%;
-
+    background-color: #f2f2f2;
 }
+
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.opciones button {
+    margin: 8px;
+    padding: 12px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opciones button:hover {
+    transform: scale(1.1);
+    background-color: black;
+}
+
 section {
-    color:rgb(36, 34, 34);
-    
-}
-
-main{
-   
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eee;
 }
