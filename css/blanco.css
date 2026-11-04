@@ -1,0 +1,14 @@
+h1 , h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+    color: rgba(0, 255, 255, 0.356);
+   
+    
+   
+}
+ header , footer{
+    background-color: aliceblue;
+    color: blue;
+
+ }
