@@ -1,7 +1,19 @@
 h1 {
     padding: 10px;
-    color: #352d45;
+    color: #5e4b85;
     background-color: #e9e2f5;
+}
+
+h2 {
+    color: #526b8b;
+}
+
+h3 {
+    color: #786052;
+}
+
+p {
+    color: #4d596f;
 }
 
 nav ul {
@@ -12,16 +24,17 @@ nav a {
     display: inline-block;
     margin: 3px;
     padding: 6px 10px;
-    color: #352d45;
+    color: #51416f;
     text-decoration: none;
     background-color: #f5f0fa;
     border: 1px solid #c9bfd7;
+    transition: color 0.2s, background-color 0.2s, transform 0.2s;
 }
 
 nav a:hover {
     cursor: pointer;
+    color: #7b3f69;
     background-color: #ded3ee;
-    transition: background-color 0.2s;
     transform: scale(1.2);
 }
 

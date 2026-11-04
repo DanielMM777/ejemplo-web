@@ -1,7 +1,11 @@
 h1 {
     padding: 10px;
-    color: #352d45;
+    color: #5e4b85;
     background-color: #e9e2f5;
+}
+
+h2 {
+    color: #526b8b;
 }
 
 nav ul {
@@ -12,16 +16,17 @@ nav a {
     display: inline-block;
     margin: 3px;
     padding: 6px 10px;
-    color: #352d45;
+    color: #51416f;
     text-decoration: none;
     background-color: #f5f0fa;
     border: 1px solid #c9bfd7;
+    transition: color 0.2s, background-color 0.2s, transform 0.2s;
 }
 
 nav a:hover {
     cursor: pointer;
+    color: #7b3f69;
     background-color: #ded3ee;
-    transition: background-color 0.2s;
     transform: scale(1.2);
 }
 
@@ -51,43 +56,46 @@ th, td{
 tr:hover {
     background-color: #fff1c9;
     transform: scale(1.02);
-    transition: 2s ;
+    transition: color 0.2s, background-color 0.2s, transform 0.2s;
 }
-td:hover{
-    color: #302b35;
+tr:hover td {
+    color: #51416f;
+}
+tr:hover td:hover {
+    color: #7b3f69;
 }
 
 
 .fdh
 
-{background-color: #f7d8df;}
+{background-color: #f7d8df; color: #713e54;}
 .ldm
-{background-color: #d9e8fb;}
+{background-color: #d9e8fb; color: #365578;}
 .dia
-{background-color: #e6dcf6
+{background-color: #e6dcf6; color: #594477
     ;}
 .PR
-{background-color: #f5dfc5;}
+{background-color: #f5dfc5; color: #75502f;}
 .ISO
-{background-color: #d7eee6;}
+{background-color: #d7eee6; color: #315e51;}
 .GBD
-{background-color: #fae7bd;}
+{background-color: #fae7bd; color: #72531d;}
 .PY
-{background-color: #e9dcf4;}
+{background-color: #e9dcf4; color: #604276;}
 .DG
 
-{background-color: #f6d5d8;}
+{background-color: #f6d5d8; color: #773f48;}
 .PYAR
 
-{background-color: #d5eee8;}
+{background-color: #d5eee8; color: #315e57;}
 .ING
 
-{background-color: #ffedc9;}
+{background-color: #ffedc9; color: #725321;}
 
 .IPE
-{background-color: #dce5f7;}
+{background-color: #dce5f7; color: #3d527b;}
 .SAS
-{background-color: #d7ecef;}
+{background-color: #d7ecef; color: #315b63;}
 
 .RC {
     font-family: Arial, Helvetica, sans-serif;
