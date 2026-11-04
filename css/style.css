@@ -1,7 +1,7 @@
 h1 {
     padding: 10px;
-    color: bisque;
-    background-color: rgb(39, 39, 124);
+    color: #352d45;
+    background-color: #e9e2f5;
 }
 
 nav ul {
@@ -12,16 +12,17 @@ nav a {
     display: inline-block;
     margin: 3px;
     padding: 6px 10px;
-    color: black;
+    color: #352d45;
     text-decoration: none;
-    background-color: #eeeeee;
-    border: 1px solid #999999;
+    background-color: #f5f0fa;
+    border: 1px solid #c9bfd7;
 }
 
 nav a:hover {
     cursor: pointer;
-    background-color: rgb(153, 179, 180);
+    background-color: #ded3ee;
     transition: background-color 0.2s;
+    transform: scale(1.2);
 }
 
 main {
