@@ -18,7 +18,7 @@ function juego(jugador) {
         (jugador === "tijera" && maquina === "papel") ||
         (jugador === "papel" && maquina === "piedra")
     ) {
-        mensaje = "¡Gana el jugador!";
+        mensaje = "¡Has Ganado!";
         ganadas++;
     } else {
         mensaje = "¡Gana la máquina!";
