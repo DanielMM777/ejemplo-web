@@ -1,125 +1,138 @@
-h1 {
-    padding: 10px;
-    color: #5e4b85;
-    background-color: #e9e2f5;
+* {
+    box-sizing: border-box;
 }
 
-h2 {
-    color: #526b8b;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #2d3a5a;
+    color: #fff;
+    padding: 20px 30px 12px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+header h2 {
+    margin: 0 0 16px;
+    font-size: 1.2rem;
+    color: #dfe9ff;
 }
 
 nav ul {
-    padding-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
     display: inline-block;
-    margin: 3px;
-    padding: 6px 10px;
-    color: #51416f;
     text-decoration: none;
-    background-color: #f5f0fa;
-    border: 1px solid #c9bfd7;
-    transition: color 0.2s, background-color 0.2s, transform 0.2s;
+    color: #fff;
+    background: #465a7d;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
 }
 
 nav a:hover {
-    cursor: pointer;
-    color: #7b3f69;
-    background-color: #ded3ee;
-    transform: scale(1.2);
+    background: #5d74a5;
 }
 
-main
-    { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100;
-        
-
+main {
+    padding: 25px 15px;
 }
-table {
-    color: #302b35;
-    border-color: #8e8798;
-    border-collapse: collapse;
-    width: 80%;
+
+.schedule-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(48, 43, 53, 0.18);
+    padding: 15px;
+}
 
+.schedule-wrap {
+    overflow-x: auto;
 }
-th, td{
-    padding: 8px;
-    text-align: left;
+
+table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    background: #fff;
 }
+
+th,
+td {
+    border: 1px solid #d5d5d5;
+    padding: 10px 8px;
+    text-align: center;
+}
+
+.dia {
+    background: #e9edf5;
+    font-weight: bold;
+    color: #23314d;
+}
+
 tr:hover {
-    background-color: #fff1c9;
-    transform: scale(1.02);
-    transition: color 0.2s, background-color 0.2s, transform 0.2s;
-}
-tr:hover td {
-    color: #51416f;
-}
-tr:hover td:hover {
-    color: #7b3f69;
+    background: #f7f9fc;
 }
 
-
-.fdh
-
-{background-color: #f7d8df; color: #713e54;}
-.ldm
-{background-color: #d9e8fb; color: #365578;}
-.dia
-{background-color: #e6dcf6; color: #594477
-    ;}
-.PR
-{background-color: #f5dfc5; color: #75502f;}
-.ISO
-{background-color: #d7eee6; color: #315e51;}
-.GBD
-{background-color: #fae7bd; color: #72531d;}
-.PY
-{background-color: #e9dcf4; color: #604276;}
-.DG
-
-{background-color: #f6d5d8; color: #773f48;}
-.PYAR
-
-{background-color: #d5eee8; color: #315e57;}
-.ING
-
-{background-color: #ffedc9; color: #725321;}
-
-.IPE
-{background-color: #dce5f7; color: #3d527b;}
-.SAS
-{background-color: #d7ecef; color: #315b63;}
+.fdh { background: #ffdfe5; color: #6a2c39; }
+.ldm { background: #dfeeff; color: #28527a; }
+.PR { background: #fff0d6; color: #7d5920; }
+.ISO { background: #dff8ee; color: #1f6b52; }
+.GBD { background: #fff2c2; color: #715812; }
+.PY { background: #efe4ff; color: #5c3a8a; }
+.DG { background: #ffe4ea; color: #7a3447; }
+.PYAR { background: #daf0ea; color: #295f50; }
+.ING { background: #fff2c9; color: #775a1b; }
+.IPE { background: #e3ebff; color: #354d7d; }
+.SAS { background: #dff5f8; color: #2c5b66; }
 
 .RC {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    background: #eef2f7;
+    color: #3a4561;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: bold;
 }
 
-p
-{align-items: center;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-
-table {
-    border: 2px solid #8e8798;
-    border-collapse: collapse;
-    width: 100%;
-}
-td
-{
-    border: 1px solid #8e8798;
-    padding: 8px;
+footer {
     text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 0.95rem;
 }
-tr {
-    border: 1px solid #8e8798;
-}
-thead {
-    background-color: #ede8f3;
+
+@media (max-width: 700px) {
+    header {
+        padding: 18px 15px 10px;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 8px 6px;
+        font-size: 0.82rem;
+    }
 }

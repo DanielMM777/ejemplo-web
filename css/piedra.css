@@ -1,31 +1,95 @@
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: #f2f2f2;
+    background: #f3f5f7;
+    color: #1d2433;
+}
+
+header {
+    background: #2d4568;
+    padding: 15px 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #45638f;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #5a79af;
 }
 
 main {
-    max-width: 600px;
+    max-width: 650px;
     margin: 40px auto;
-    padding: 20px;
-    background-color: white;
+    padding: 30px 25px;
+    background: #fff;
+    border: 1px solid #dfe3ea;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+    margin-top: 0;
+    color: #23314d;
+}
+
+.instrucciones {
+    color: #4e5c75;
+    margin-bottom: 20px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .opciones button {
     margin: 8px;
-    padding: 12px;
+    padding: 16px 18px;
     font-size: 30px;
     cursor: pointer;
-    transition: 0.2s;
+    border: 1px solid #cfd8e6;
+    border-radius: 8px;
+    background: #edf3ff;
+    transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .opciones button:hover {
-    transform: scale(1.1);
-    background-color: black;
+    transform: translateY(-2px);
+    background: #dfeaff;
 }
 
 section {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #eee;
+    margin-top: 24px;
+    padding: 18px 16px;
+    background: #f7f9fc;
+    border: 1px solid #e2e7ef;
+    border-radius: 8px;
+}
+
+#resultado h2 {
+    color: #2d4568;
+}
+
+#mensaje {
+    font-weight: bold;
+    color: #2f4d7c;
 }
