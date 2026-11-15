@@ -1,0 +1,84 @@
+body.tema-oscuro {
+    background: #141820;
+    color: #f1f3f5;
+}
+
+body.tema-oscuro header,
+body.tema-oscuro footer,
+body.tema-oscuro main,
+body.tema-oscuro section,
+body.tema-oscuro .calculadora,
+body.tema-oscuro .schedule-card,
+body.tema-oscuro fieldset {
+    background-color: #202733;
+    color: #f1f3f5;
+}
+
+body.tema-oscuro h1,
+body.tema-oscuro h2,
+body.tema-oscuro h3,
+body.tema-oscuro p,
+body.tema-oscuro label,
+body.tema-oscuro td,
+body.tema-oscuro th,
+body.tema-oscuro legend {
+    color: #f1f3f5;
+}
+
+body.tema-oscuro a {
+    color: #a9d2ff;
+}
+
+body.tema-oscuro nav a {
+    color: #fff;
+}
+
+body.tema-oscuro input,
+body.tema-oscuro textarea,
+body.tema-oscuro table,
+body.tema-oscuro td,
+body.tema-oscuro th {
+    background-color: #2b3543;
+    color: #f1f3f5;
+}
+
+body.tema-oscuro .T1,
+body.tema-oscuro .T2,
+body.tema-oscuro .T3,
+body.tema-oscuro .C1,
+body.tema-oscuro .C2,
+body.tema-oscuro .C3,
+body.tema-oscuro footer {
+    background-color: #202733;
+    background-image: none;
+    color: #f1f3f5;
+}
+
+body.tema-oscuro .F2,
+body.tema-oscuro .F4 {
+    background-color: #2b3543;
+    border-color: #2b3543;
+    color: #f1f3f5;
+}
+
+.boton-tema {
+    padding: 8px 12px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    background: #45638f;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton-tema:hover,
+.boton-tema:focus-visible {
+    background: #5a79af;
+}
+
+body .boton-tema-flotante {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+}
