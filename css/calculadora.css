@@ -1,1 +1,165 @@
-﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f7;
+    color: #1d2433;
+}
+
+header {
+    background: #2d4568;
+    color: #fff;
+    padding: 20px 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #45638f;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: #5a79af;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.calculadora {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #dfe3ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.calculadora h2 {
+    margin: 0 0 18px;
+    color: #23314d;
+    text-align: center;
+}
+
+.pantalla {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 14px;
+    padding: 14px 12px;
+    border: 1px solid #cdd5df;
+    border-radius: 5px;
+    background: #f7f9fc;
+    color: #1d2433;
+    font: inherit;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.botones button {
+    min-height: 52px;
+    border: 1px solid #cdd5df;
+    border-radius: 5px;
+    background: #f7f9fc;
+    color: #23314d;
+    font: inherit;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.botones button:hover {
+    background: #e9eef6;
+}
+
+.botones button:active {
+    transform: translateY(1px);
+}
+
+.botones button:focus-visible {
+    outline: 3px solid #8da9d1;
+    outline-offset: 2px;
+}
+
+.botones .operator {
+    background: #45638f;
+    border-color: #45638f;
+    color: #fff;
+}
+
+.botones .operator:hover {
+    background: #5a79af;
+}
+
+.botones .equals {
+    background: #2d4568;
+    border-color: #2d4568;
+    color: #fff;
+}
+
+.botones .equals:hover {
+    background: #425f8e;
+}
+
+.botones .clear {
+    background: #edf3ff;
+    color: #2d4568;
+}
+
+.botones .utility {
+    background: #e9edf5;
+}
+
+.botones .delete {
+    grid-column: 1 / -1;
+    min-height: 42px;
+    font-size: 1rem;
+}
+
+.ayuda {
+    margin: 14px 0 0;
+    color: #5a677d;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 18px 16px 14px;
+    }
+
+    .calculadora {
+        padding: 20px 16px;
+    }
+}

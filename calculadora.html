@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora | 1 ASIR - LLMM</title>
     <link rel="stylesheet" href="css/calculadora.css">
     <script src="js/calculadora.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>1 ASIR - LLMM</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="piedra.html">Piedra, papel o tijera</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="calculadora.html" aria-current="page">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="calculadora" aria-labelledby="titulo-calculadora">
+            <h2 id="titulo-calculadora">Calculadora</h2>
+            <input id="pantalla" class="pantalla" type="text" value="0" readonly aria-label="Resultado" aria-live="polite">
+            <div class="botones">
+                <button type="button" onclick="insertarNumero('7')" class="num">7</button>
+                <button type="button" onclick="insertarNumero('8')" class="num">8</button>
+                <button type="button" onclick="insertarNumero('9')" class="num">9</button>
+                <button type="button" onclick="insertarOperador('/')" class="operator" aria-label="Dividir">÷</button>
 
+                <button type="button" onclick="insertarNumero('4')" class="num">4</button>
+                <button type="button" onclick="insertarNumero('5')" class="num">5</button>
+                <button type="button" onclick="insertarNumero('6')" class="num">6</button>
+                <button type="button" onclick="insertarOperador('*')" class="operator" aria-label="Multiplicar">×</button>
 
-        <input type="text" id="pantalla" value="0" readonly>
+                <button type="button" onclick="insertarNumero('1')" class="num">1</button>
+                <button type="button" onclick="insertarNumero('2')" class="num">2</button>
+                <button type="button" onclick="insertarNumero('3')" class="num">3</button>
+                <button type="button" onclick="insertarOperador('-')" class="operator">−</button>
 
-        <div class="botones">
-            <button onclick="insertarNumero('7')" class="num">7</button>
-            <button onclick="insertarNumero('8')" class="num">8</button>
-            <button onclick="insertarNumero('9')" class="num">9</button>
-            <button onclick="insertarOperador('/')" class="operator">/</button>
+                <button type="button" onclick="insertarNumero('0')" class="num">0</button>
+                <button type="button" onclick="insertarNumero('.')" class="num">.</button>
+                <button type="button" onclick="calcularResultado()" class="equals">=</button>
+                <button type="button" onclick="insertarOperador('+')" class="operator">+</button>
 
-            <button onclick="insertarNumero('4')" class="num">4</button>
-            <button onclick="insertarNumero('5')" class="num">5</button>
-            <button onclick="insertarNumero('6')" class="num">6</button>
-            <button onclick="insertarOperador('*')" class="operator">*</button>
+                <button type="button" onclick="limpiarPantalla()" class="clear">C</button>
+                <button type="button" onclick="toggleSigno()" class="utility">±</button>
+                <button type="button" onclick="calcularPorcentaje()" class="utility">%</button>
+                <button type="button" onclick="calcularRaizCuadrada()" class="utility" aria-label="Raíz cuadrada">√</button>
 
-            <button onclick="insertarNumero('1')" class="num">1</button>
-            <button onclick="insertarNumero('2')" class="num">2</button>
-            <button onclick="insertarNumero('3')" class="num">3</button>
-            <button onclick="insertarOperador('-')" class="operator">-</button>
-
-            <button onclick="insertarNumero('0')" class="num">0</button>
-            <button onclick="insertarNumero('.')" class="num">.</button>
-            <button onclick="calcularResultado()" class="equals">=</button>
-            <button onclick="insertarOperador('+')" class="operator">+</button>
-
-            <button onclick="limpiarPantalla()" class="clear">C</button>
-            <button onclick="toggleSigno()" class="toggle">±</button>
-            <button onclick="calcularPorcentaje()" class="percent">%</button>
-            <button onclick="calcularRaizCuadrada()" class="operator">√</button>
-
-            <button class="eliminar">DELETE</button>
-        </div>
-    </div>
+                <button type="button" onclick="eliminarNumero()" class="delete">Borrar último dígito</button>
+            </div>
+            <p class="ayuda">También puedes usar el teclado.</p>
+        </section>
+    </main>
 </body>
 </html>
